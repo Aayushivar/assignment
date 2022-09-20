@@ -1,0 +1,106 @@
+Assignment 1
+Create example of list,tuple and dictionary and prefer slicing and index operations
+
+List <- ordered collection of dataframe , [] , mutable ar changeable
+names=["Aayushi",40,"Varun",55,"Radhika",84,"Aryan",60]
+print(names)
+
+['Aayushi', 40, 'Varun', 55, 'Radhika', 84, 'Aryan', 60]
+
+#insert element
+names.insert(8,"Anam")
+print(names)
+
+['Aayushi', 40, 'Varun', 55, 'Radhika', 84, 'Aryan', 60, 'Anam']
+
+#Add
+names.append(80)
+print(names)
+
+['Aayushi', 40, 'Varun', 55, 'Radhika', 84, 'Aryan', 60, 'Anam', 80]
+
+#Remove element
+names.remove("Varun")
+print(names)
+
+['Aayushi', 40, 55, 'Radhika', 84, 'Aryan', 60, 'Anam', 80]
+
+#Delete element
+del names[2]
+print(names)
+
+['Aayushi', 40, 'Radhika', 84, 'Aryan', 60, 'Anam', 80]
+
+#Indexing
+names=["Aayushi",40,"Varun",55,"Radhika",84,"Aryan",60]
+print(names[0])
+
+Aayushi
+
+Tuple<- ordered collection of datatypes ,(), immutable
+_tuple_=(["Statistics","mathematics","computer science",301,302,303])
+print(_tuple_)
+
+['Statistics', 'mathematics', 'computer science', 301, 302, 303]
+
+#Inserting
+_tuple_.insert(3,"physics")
+print(_tuple_)
+
+['Statistics', 'mathematics', 'computer science', 'physics', 301, 302, 303]
+
+#Adding
+_tuple_.append(304)
+print(_tuple_)
+['Statistics', 'mathematics', 'computer science', 'physics', 301, 302, 303, 304]
+
+
+#Indexing
+_tuple_=(["Statistics","mathematics","computer science",301,302,303])
+print(_tuple_[4])
+
+302
+
+Dictionary<- It consists of key and the values , {}
+intro ={
+    "name":"aayushi varshney",
+     "age":"22",
+     "class":"msc",
+     "education":"post graduation"
+}
+print(intro)
+
+{'name': 'aayushi varshney', 'age': '22', 'class': 'msc', 'education': 'post graduation'}
+
+#delete
+del intro["age"]
+print(intro)
+
+{'name': 'aayushi varshney', 'class': 'msc', 'education': 'post graduation'}
+
+#add
+intro.update({"interesting subject":"Statistics"})
+print(intro)
+{'name': 'aayushi varshney', 'class': 'msc', 'education': 'post graduation', 'interesting subject': 'Statistics'}
+
+Slicing-> printing sequence of elements
+step index
+name="Econometrics"
+
+print(name[0:6])
+Econom
+
+print(name[8])
+r
+
+print(name[4:])
+ometrics
+
+print(name[-8:-4])
+omet
+
+print(name[0:-7])
+Econo
+
+print(name[1:5:2])
+cn
